@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>domain-data-business-intelligence-infra</artifactId>
+    <name>domain-data-business-intelligence-infra</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

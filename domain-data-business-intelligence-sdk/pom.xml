@@ -6,6 +6,7 @@
 
     <groupId>io.fireflysoftware</groupId>
     <artifactId>domain-data-business-intelligence-sdk</artifactId>
+    <name>domain-data-business-intelligence-sdk</name>
     <version>26.10.3</version>
 
     <properties>

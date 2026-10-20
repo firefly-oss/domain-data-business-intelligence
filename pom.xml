@@ -12,6 +12,7 @@
     </parent>
 
     <artifactId>domain-data-business-intelligence</artifactId>
+    <name>domain-data-business-intelligence</name>
     <packaging>pom</packaging>
 
     <properties>
