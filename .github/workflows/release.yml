@@ -13,5 +13,6 @@ jobs:
       packages: write
     with:
       java-version: '25'
-      deploy-module: 'domain-data-business-intelligence-sdk'
+      destination: both
+      deploy-modules: '.,:domain-data-business-intelligence-core,:domain-data-business-intelligence-interfaces,:domain-data-business-intelligence-web,:domain-data-business-intelligence-infra'
     secrets: inherit

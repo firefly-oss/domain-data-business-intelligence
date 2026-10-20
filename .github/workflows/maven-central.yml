@@ -11,5 +11,5 @@ jobs:
     with:
       java-version: '25'
       destination: central
-      deploy-modules: ':domain-data-business-intelligence-core,:domain-data-business-intelligence-interfaces,:domain-data-business-intelligence-web,:domain-data-business-intelligence-infra'
+      deploy-modules: '.,:domain-data-business-intelligence-core,:domain-data-business-intelligence-interfaces,:domain-data-business-intelligence-web,:domain-data-business-intelligence-infra'
     secrets: inherit
