@@ -3,14 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.fireflysoftware</groupId>
+        <artifactId>domain-data-business-intelligence</artifactId>
+        <version>26.10.3</version>
+    </parent>
 
-    <groupId>io.fireflysoftware</groupId>
     <artifactId>domain-data-business-intelligence-sdk</artifactId>
     <name>domain-data-business-intelligence-sdk</name>
-    <version>26.10.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- No generated client yet. Skip publish so the empty jar is not sent to Central. -->
+        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
-
 </project>

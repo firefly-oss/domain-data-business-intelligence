@@ -11,5 +11,4 @@ jobs:
     with:
       java-version: '25'
       destination: central
-      deploy-module: 'domain-data-business-intelligence-sdk'
     secrets: inherit
