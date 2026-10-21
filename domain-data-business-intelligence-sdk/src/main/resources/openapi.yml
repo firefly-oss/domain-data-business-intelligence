@@ -1,0 +1,105 @@
+openapi: 3.0.3
+info:
+  title: Firefly OpenPlatform - Domain - Business Intelligence
+  version: 26.10.4
+  description: Company selection. Enrichment is not served by this service.
+paths:
+  /api/v1/business-intelligence/select-company:
+    post:
+      tags:
+        - Business Intelligence
+      summary: Select company
+      description: Retrieve companies matching the selection criteria
+      operationId: selectCompany
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SelectCompanyRequest'
+      responses:
+        '200':
+          description: Matching companies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SelectCompanyResponse'
+components:
+  schemas:
+    SelectCompanyRequest:
+      type: object
+      properties:
+        name:
+          type: string
+        city:
+          type: string
+        country:
+          type: string
+        address:
+          type: string
+        nationalId:
+          type: string
+        postCode:
+          type: string
+    SelectCompanyResponse:
+      type: object
+      properties:
+        Hint:
+          type: string
+        Score:
+          type: number
+          format: double
+        Name:
+          type: string
+        Name_Local:
+          type: string
+        MatchedName:
+          type: string
+        MatchedName_Type:
+          type: string
+        Address:
+          type: string
+        Postcode:
+          type: string
+        City:
+          type: string
+        Country:
+          type: string
+        Address_Type:
+          type: string
+        PhoneOrFax:
+          type: array
+          items:
+            type: string
+        EmailOrWebsite:
+          type: array
+          items:
+            type: string
+        National_Id:
+          type: array
+          items:
+            type: string
+        NationalIdLabel:
+          type: array
+          items:
+            type: string
+        State:
+          type: string
+        Region:
+          type: string
+        LegalForm:
+          type: string
+        ConsolidationCode:
+          type: string
+        Status:
+          type: string
+        Ticker:
+          type: string
+        CustomRule:
+          type: string
+        Isin:
+          type: string
+        BvDId:
+          type: string
