@@ -14,8 +14,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- The generated client is not published. This module ships the select-company client only. -->
-        <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
     <dependencies>
