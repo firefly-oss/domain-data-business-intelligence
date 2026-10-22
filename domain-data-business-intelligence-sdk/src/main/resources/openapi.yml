@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Firefly OpenPlatform - Domain - Business Intelligence
-  version: 26.10.5
+  version: 26.10.6
   description: Company selection. Enrichment is not served by this service.
 paths:
   /api/v1/business-intelligence/select-company:
